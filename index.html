@@ -2,6 +2,7 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TECH TALK LANGUAGE LAB</title>
   <style>
     body {
@@ -52,7 +53,9 @@
       border-radius: 8px;
       margin-bottom: 20px;
     }
-    .course-item h3,
+    .course-item h3 {
+      color: white;
+    }
     .course-item p {
       color: white;
     }
@@ -70,10 +73,11 @@
       text-decoration: none;
     }
 
-    /* Rasmlar va aloqa qismi */
+    /* 🔧 YANGI QO‘SHILGAN STYLES: */
     .contact-container {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
       align-items: flex-start;
     }
 
@@ -86,7 +90,8 @@
     }
 
     .contact-images img {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 16px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -95,6 +100,17 @@
     .contact-details {
       flex: 2;
       min-width: 250px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-images img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -116,7 +132,7 @@
 <div class="section" id="biz">
   <h2>Biz haqimizda</h2>
   <div class="course-item">
-    <p>TECH TALK LANGUAGE LAB — bu zamonaviy uslubda tillar va IT bo‘yicha ta’lim beruvchi markaz...</p>
+    <p>TECH TALK LANGUAGE LAB — bu zamonaviy uslubda tillar va IT bo‘yicha ta’lim beruvchi markaz. Biz o‘quvchilarga yuqori sifatli ta’lim, interaktiv mashg‘ulotlar va natijaga yo‘naltirilgan metodikani taklif qilamiz. Darslarimiz tajribali va sertifikatlangan o‘qituvchilar tomonidan olib boriladi. Kurslar davomida amaliy mashg‘ulotlar, testlar, va guruh ishlari bilan bilimlar mustahkamlanadi. Maqsadimiz — qisqa vaqt ichida sizni yuqori darajaga olib chiqish.</p>
   </div>
 </div>
 
@@ -124,22 +140,25 @@
   <h2>Kurslar</h2>
   <div class="course-item">
     <h3>IT Kurslari</h3>
-    <p>Kompyuter savodxonligi, MS Office dasturlari...</p>
+    <p>Kompyuter savodxonligi, MS Office dasturlari, internetdan foydalanish, shuningdek, boshlang‘ich dasturlash bo‘yicha darslar. Kurs davomiyligi 3 oy. Har bir o‘quvchi amaliy topshiriqlar orqali o‘z ko‘nikmalarini mustahkamlaydi.</p>
   </div>
   <div class="course-item">
     <h3>Ingliz tili</h3>
-    <p>Boshlang‘ichdan to IELTS darajasigacha...</p>
+    <p>Boshlang‘ichdan to IELTS darajasigacha bo‘lgan kurslar. Grammatika, lug‘at boyligini oshirish, tinglab tushunish va speaking darslari. Kurs davomiyligi 3-6 oy. Har bir bosqichda oraliq testlar va yakuniy baholash bo‘ladi.</p>
   </div>
   <div class="course-item">
     <h3>Rus tili</h3>
-    <p>Rus tilida erkin so‘zlashish...</p>
+    <p>Rus tilida erkin so‘zlashish, grammatika va yozuv ko‘nikmalarini rivojlantirish. Kurs davomiyligi 2-4 oy. Har bir darsda real hayotiy situatsiyalar asosida mashg‘ulotlar o‘tiladi.</p>
   </div>
 </div>
 
 <div class="section" id="nega">
   <h2>Nega o‘rganishimiz kerak?</h2>
   <div class="course-item">
-    <p>Bugungi kunda bilim — bu eng katta kuch...</p>
+    <p>Bugungi kunda bilim — bu eng katta kuch. Ingliz tili, rus tili va IT sohasini o‘rganish sizga nafaqat yaxshi ish topish, balki dunyo bilan aloqada bo‘lish, yangi imkoniyatlar eshigini ochish imkonini beradi.</p>
+    <p>🌍 Yangi til — yangi dunyo! Har bir o‘rgangan til sizga dunyoni boshqacha ko‘rish imkonini beradi.</p>
+    <p>💻 IT bilimlari esa sizni zamonaviy kasblar, mustaqil ishlash va katta daromad sari yetaklaydi.</p>
+    <p>🎯 O‘rganish orqali o‘z hayotingizni o‘zgartiring. Biz bilan birga boshlang, katta marralarga erishing!</p>
   </div>
 </div>
 
@@ -147,11 +166,11 @@
   <h2>Afzalliklarimiz</h2>
   <div class="course-item">
     <h3>📚 Zamonaviy dars metodikasi</h3>
-    <p>Barcha kurslar interaktiv va amaliy mashg‘ulotlarga asoslangan...</p>
+    <p>Barcha kurslar interaktiv va amaliy mashg‘ulotlarga asoslangan bo‘lib, har bir o‘quvchi faol ishtirok etadi.</p>
   </div>
   <div class="course-item">
     <h3>🌐 Online tarzda darslar</h3>
-    <p>Kurslarimiz Zoom, Google Meet kabi platformalarda ham olib boriladi...</p>
+    <p>Kurslarimiz Zoom, Google Meet kabi platformalarda ham olib boriladi — uyda o‘tirib o‘qing!</p>
   </div>
   <div class="course-item">
     <h3>👨‍🏫 Tajribali o‘qituvchilar</h3>
@@ -159,11 +178,11 @@
   </div>
   <div class="course-item">
     <h3>🎯 Individual yondashuv</h3>
-    <p>Har bir o‘quvchining darajasi va ehtiyojiga qarab alohida yondashuv...</p>
+    <p>Har bir o‘quvchining darajasi va ehtiyojiga qarab alohida yondashuv ta’minlanadi.</p>
   </div>
   <div class="course-item">
     <h3>📜 Sertifikat beriladi</h3>
-    <p>Kurs yakunida rasmiy sertifikat beriladi...</p>
+    <p>Kurs yakunida rasmiy sertifikat beriladi. U orqali ishga joylashish yoki o‘qishni davom ettirish mumkin.</p>
   </div>
 </div>
 
@@ -174,6 +193,7 @@
       <img src="manzil.png" alt="Manzil rasmi">
       <img src="xona.png" alt="Xona rasmi">
     </div>
+
     <div class="course-item contact-details">
       <p class="contact">📞 +998 99 771 98 88</p>
       <p class="contact">📞 +998 90 064 15 18</p>
