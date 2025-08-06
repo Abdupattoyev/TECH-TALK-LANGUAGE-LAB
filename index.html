@@ -72,51 +72,85 @@
       color: white;
       text-decoration: none;
     }
+
+    /* 🔧 YANGI QO‘SHILGAN STYLES: */
+    .contact-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .contact-images {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-images img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-details {
+      flex: 2;
+      min-width: 250px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-images img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
 
- <header style="background: #080238; color: white; padding: 40px 20px; text-align: center;">
+<header>
   <img src="logo.png" alt="Tech Talk Logo" style="height: 180px; border-radius: 50%; margin-bottom: 20px;">
   <h1>TECH TALK LANGUAGE LAB</h1>
   <p>Ingliz tili, Rus tili va IT kurslari — barchasi bir joyda!</p>
 </header>
 
+<nav>
+  <a href="#biz">Biz haqimizda</a>
+  <a href="#kurslar">Kurslar</a>
+  <a href="#afzalliklar">Afzalliklar</a>
+  <a href="#aloqa">Aloqa</a>
+</nav>
 
-
-  <nav>
-    <a href="#biz">Biz haqimizda</a>
-    <a href="#kurslar">Kurslar</a>
-    <a href="#afzalliklar">Afzalliklar</a>
-    <a href="#aloqa">Aloqa</a>
-  </nav>
-
-  <div class="section" id="biz">
-    <h2>Biz haqimizda</h2>
-    <div class="course-item">
-      <p>TECH TALK LANGUAGE LAB — bu zamonaviy uslubda tillar va IT bo‘yicha ta’lim beruvchi markaz. Biz o‘quvchilarga yuqori sifatli ta’lim, interaktiv mashg‘ulotlar va natijaga yo‘naltirilgan metodikani taklif qilamiz. Darslarimiz tajribali va sertifikatlangan o‘qituvchilar tomonidan olib boriladi. Kurslar davomida amaliy mashg‘ulotlar, testlar, va guruh ishlari bilan bilimlar mustahkamlanadi. Maqsadimiz — qisqa vaqt ichida sizni yuqori darajaga olib chiqish.</p>
-    </div>
+<div class="section" id="biz">
+  <h2>Biz haqimizda</h2>
+  <div class="course-item">
+    <p>TECH TALK LANGUAGE LAB — bu zamonaviy uslubda tillar va IT bo‘yicha ta’lim beruvchi markaz. Biz o‘quvchilarga yuqori sifatli ta’lim, interaktiv mashg‘ulotlar va natijaga yo‘naltirilgan metodikani taklif qilamiz. Darslarimiz tajribali va sertifikatlangan o‘qituvchilar tomonidan olib boriladi. Kurslar davomida amaliy mashg‘ulotlar, testlar, va guruh ishlari bilan bilimlar mustahkamlanadi. Maqsadimiz — qisqa vaqt ichida sizni yuqori darajaga olib chiqish.</p>
   </div>
+</div>
 
-  <div class="section" id="kurslar">
-    <h2>Kurslar</h2>
-
-    <div class="course-item">
-      <h3>IT Kurslari</h3>
-      <p style="color: white;">Kompyuter savodxonligi, MS Office dasturlari, internetdan foydalanish, shuningdek, boshlang‘ich dasturlash bo‘yicha darslar. Kurs davomiyligi 3 oy. Har bir o‘quvchi amaliy topshiriqlar orqali o‘z ko‘nikmalarini mustahkamlaydi.</p>
-    </div>
-
-    <div class="course-item">
-      <h3>Ingliz tili</h3>
-      <p>Boshlang‘ichdan to IELTS darajasigacha bo‘lgan kurslar. Grammatika, lug‘at boyligini oshirish, tinglab tushunish va speaking darslari. Kurs davomiyligi 3-6 oy. Har bir bosqichda oraliq testlar va yakuniy baholash bo‘ladi.</p>
-    </div>
-
-    <div class="course-item">
-      <h3>Rus tili</h3>
-      <p>Rus tilida erkin so‘zlashish, grammatika va yozuv ko‘nikmalarini rivojlantirish. Kurs davomiyligi 2-4 oy. Har bir darsda real hayotiy situatsiyalar asosida mashg‘ulotlar o‘tiladi.</p>
-    </div>
+<div class="section" id="kurslar">
+  <h2>Kurslar</h2>
+  <div class="course-item">
+    <h3>IT Kurslari</h3>
+    <p>Kompyuter savodxonligi, MS Office dasturlari, internetdan foydalanish, shuningdek, boshlang‘ich dasturlash bo‘yicha darslar. Kurs davomiyligi 3 oy. Har bir o‘quvchi amaliy topshiriqlar orqali o‘z ko‘nikmalarini mustahkamlaydi.</p>
   </div>
-
+  <div class="course-item">
+    <h3>Ingliz tili</h3>
+    <p>Boshlang‘ichdan to IELTS darajasigacha bo‘lgan kurslar. Grammatika, lug‘at boyligini oshirish, tinglab tushunish va speaking darslari. Kurs davomiyligi 3-6 oy. Har bir bosqichda oraliq testlar va yakuniy baholash bo‘ladi.</p>
+  </div>
+  <div class="course-item">
+    <h3>Rus tili</h3>
+    <p>Rus tilida erkin so‘zlashish, grammatika va yozuv ko‘nikmalarini rivojlantirish. Kurs davomiyligi 2-4 oy. Har bir darsda real hayotiy situatsiyalar asosida mashg‘ulotlar o‘tiladi.</p>
+  </div>
+</div>
 
 <div class="section" id="nega">
   <h2>Nega o‘rganishimiz kerak?</h2>
@@ -128,67 +162,51 @@
   </div>
 </div>
 
+<div class="section" id="afzalliklar">
+  <h2>Afzalliklarimiz</h2>
+  <div class="course-item">
+    <h3>📚 Zamonaviy dars metodikasi</h3>
+    <p>Barcha kurslar interaktiv va amaliy mashg‘ulotlarga asoslangan bo‘lib, har bir o‘quvchi faol ishtirok etadi.</p>
+  </div>
+  <div class="course-item">
+    <h3>🌐 Online tarzda darslar</h3>
+    <p>Kurslarimiz Zoom, Google Meet kabi platformalarda ham olib boriladi — uyda o‘tirib o‘qing!</p>
+  </div>
+  <div class="course-item">
+    <h3>👨‍🏫 Tajribali o‘qituvchilar</h3>
+    <p>O‘z sohasida tajribali va sertifikatlangan mutaxassislar sizga dars o‘tadi.</p>
+  </div>
+  <div class="course-item">
+    <h3>🎯 Individual yondashuv</h3>
+    <p>Har bir o‘quvchining darajasi va ehtiyojiga qarab alohida yondashuv ta’minlanadi.</p>
+  </div>
+  <div class="course-item">
+    <h3>📜 Sertifikat beriladi</h3>
+    <p>Kurs yakunida rasmiy sertifikat beriladi. U orqali ishga joylashish yoki o‘qishni davom ettirish mumkin.</p>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-  <div class="section" id="afzalliklar">
-    <h2>Afzalliklarimiz</h2>
-
-    <div class="course-item">
-      <h3>📚 Zamonaviy dars metodikasi</h3>
-      <p>Barcha kurslar interaktiv va amaliy mashg‘ulotlarga asoslangan bo‘lib, har bir o‘quvchi faol ishtirok etadi.</p>
+<div class="section contact" id="aloqa">
+  <h2>Aloqa</h2>
+  <div class="contact-container">
+    <div class="contact-images">
+      <img src="manzil.png" alt="Manzil rasmi">
+      <img src="xona.png" alt="Xona rasmi">
     </div>
 
-    <div class="course-item">
-      <h3>🌐 Online tarzda darslar</h3>
-      <p>Kurslarimiz Zoom, Google Meet kabi platformalarda ham olib boriladi — uyda o‘tirib o‘qing!</p>
-    </div>
-
-    <div class="course-item">
-      <h3>👨‍🏫 Tajribali o‘qituvchilar</h3>
-      <p>O‘z sohasida tajribali va sertifikatlangan mutaxassislar sizga dars o‘tadi.</p>
-    </div>
-
-    <div class="course-item">
-      <h3>🎯 Individual yondashuv</h3>
-      <p>Har bir o‘quvchining darajasi va ehtiyojiga qarab alohida yondashuv ta’minlanadi.</p>
-    </div>
-
-    <div class="course-item">
-      <h3>📜 Sertifikat beriladi</h3>
-      <p>Kurs yakunida rasmiy sertifikat beriladi. U orqali ishga joylashish yoki o‘qishni davom ettirish mumkin.</p>
+    <div class="course-item contact-details">
+      <p class="contact">📞 +998 99 771 98 88</p>
+      <p class="contact">📞 +998 90 064 15 18</p>
+      <p class="contact">📱 Telegram: <a href="https://t.me/aziznematov888" target="_blank">@aziznematov888</a></p>
+      <p class="contact">📷 Instagram: <a href="https://instagram.com/techtalk_lang_lab" target="_blank">@techtalk_lang_lab</a></p>
+      <p class="contact">📍 Manzil: Koson tuman madaniyat markazi, 2-qavat</p>
     </div>
   </div>
+</div>
 
-  <div class="section contact" id="aloqa">
-    <h2>Aloqa</h2>
-    <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-      <div style="flex: 1; max-width: 200px; display: flex; flex-direction: column; gap: 10px;">
-        <img src="manzil.png" alt="Manzil rasmi" style="width: 100%; border-radius: 8px;">
-        <img src="xona.png" alt="Xona rasmi" style="width: 100%; border-radius: 8px;">
-      </div>
+<footer>
+  <p>&copy; 2025 TECH TALK LANGUAGE LAB. Barcha huquqlar himoyalangan.</p>
+</footer>
 
-      <div class="course-item" style="flex: 2; min-width: 250px;">
-        <p class="contact">📞 +998 99 771 98 88</p>
-        <p class="contact">📞 +998 90 064 15 18</p>
-        <p class="contact">📱 Telegram: <a href="https://t.me/aziznematov888" target="_blank">@aziznematov888</a></p>
-        <p class="contact">📷 Instagram: <a href="https://instagram.com/techtalk_lang_lab" target="_blank">@techtalk_lang_lab</a></p>
-        <p class="contact">📍 Manzil: Koson tuman madaniyat markazi, 2-qavat</p>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 TECH TALK LANGUAGE LAB. Barcha huquqlar himoyalangan.</p>
-  </footer>
 </body>
 </html>
